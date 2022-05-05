@@ -11,7 +11,7 @@ nav {
     background-image: url(/src/photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg);
     height: 100vh;
 }
-#whats-on:h1 {
+#whats-on h1 {
     color: #cdc16d;
     font-size: 6em;
     text-align: center;
