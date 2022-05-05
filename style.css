@@ -1,11 +1,26 @@
 html {
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
 }
 nav {
     margin-top: 185px;
     font-size: 4em;
     color: #85689a;
+    position: absolute;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #85689a;
+}
+li {
+    list-style: none;
+    display: flex;
+}
+ul {
+    display: flex;
+    gap: 70px;
+    justify-content: center;        
 }
 #whats-on {
     background-image: url(/src/photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
@@ -16,17 +31,5 @@ nav {
     color: #cdc16d;
     font-size: 6em;
     text-align: center;
-}
-a {
-    text-decoration: none;
-    color: #85689a;
-}
-li {
-    list-style: none;
-}
-ul {
-    display: flex;
-    gap: 70px;
-    align-content: center;
-    justify-items: center;
+    padding-top: 400px;
 }
