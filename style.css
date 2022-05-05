@@ -1,6 +1,11 @@
 html {
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;    
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;    
+}
+body {
+    margin: 0;
 }
 nav {
     margin-top: 185px;
@@ -24,12 +29,27 @@ ul {
 }
 #whats-on {
     background-image: url(/src/photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+    background-size: 100%;
     height: 100vh;
-    width: auto;
+    width: 100%;
+    object-fit: contain;
 }
 #whats-on h1 {
     color: #cdc16d;
     font-size: 6em;
     text-align: center;
     padding-top: 400px;
+}
+.cover {
+    display: flex;
+    justify-content: center;
+    position: static;
+    height: 690px;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #85689a;
+}
+.cover img {
+    width: 100%;
 }
