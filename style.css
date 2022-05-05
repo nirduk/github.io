@@ -8,8 +8,9 @@ nav {
     color: #85689a;
 }
 #whats-on {
-    background-image: url(/src/photo/1/jeremy-lishner-tKgcMR8saYA-unsplash.jpg);
+    background-image: url(/src/photo/1/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
     height: 100vh;
+    width: auto;
 }
 #whats-on h1 {
     color: #cdc16d;
