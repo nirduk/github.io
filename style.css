@@ -2,3 +2,14 @@ html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
 }
+nav {
+    margin-top: 185px;
+    font-size: 4em;
+    color: #85689a;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
