@@ -299,9 +299,15 @@ Navbar
 .nav-links {
   display: flex;
   flex-direction: column;
-  /* in progress */ 
+  /* in progress */
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition); 
 }
 
+.show-links {
+  height: 310px;
+}
 .nav-link {
   display: block;
   text-align: center;
