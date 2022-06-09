@@ -786,6 +786,7 @@ p {
 
 .single-instruction>p {
   color: var(--grey-700);
+  margin-bottom: 1rem;
 }
 
 .single-instruction header div {
@@ -800,13 +801,13 @@ p {
 
 .single-ingredient {
   border-bottom: 2px solid var(--grey-300);
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 0;
   color: var(--grey-700);
 }
 
 .single-tool {
   border-bottom: 2px solid var(--grey-300);
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 0;
   color: var(--primary-500);
   text-transform: capitalize;
 }
