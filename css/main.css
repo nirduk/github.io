@@ -751,6 +751,10 @@ p {
   text-transform: capitalize;
 }
 
+.recipe-tags a:hover {
+  background: var(--primary-700);
+}
+
 @media screen and (min-width: 992px) {
   .recipe-hero {
     grid-template-columns: 4fr 5fr;
