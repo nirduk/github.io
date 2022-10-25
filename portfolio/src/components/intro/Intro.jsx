@@ -9,9 +9,6 @@ function Intro() {
         <div className="mask-up"></div>
         <div className="mask-bot"></div>
       </div>
-      <div className="intro-projects">
-        <h3>and these are some of my projects</h3>
-      </div>
     </div>
   )
 }
