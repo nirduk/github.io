@@ -1,10 +1,13 @@
 import './projectCard.css'
 
-const ProjectCard = () => {
+const ProjectCard = ({ img, link, projectName }) => {
   return (
-    <div>
-      <a href="" target="_blank">
-        <img src="" alt="" />
+    <div className="card">
+      <a href={link} target="_blank">
+        <p>{projectName}</p>
+        <div className="card-image">
+          <img src={img} alt={`${projectName} cover`} />
+        </div>
       </a>
     </div>
   )

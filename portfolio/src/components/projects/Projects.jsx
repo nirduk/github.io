@@ -1,5 +1,6 @@
 import ProjectCard from '../project-card/ProjectCard'
 import './projects.css'
+import { projectsData } from '../../projectsData'
 
 const Projects = () => {
   return (
@@ -7,7 +8,9 @@ const Projects = () => {
       <h3>and these are some of my projects</h3>
       <div className="projects">
         <i className="fa-solid fa-chevron-left"></i>
-        <ProjectCard />
+        {projectsData.map(item => (
+          <ProjectCard img={item.img} link={item.link} projectName={item.projectName} key={item.id} />
+        ))}
         <i className="fa-solid fa-chevron-right"></i>
       </div>
     </div>
