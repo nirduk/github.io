@@ -4,9 +4,9 @@ function Intro() {
   return (
     <div className='intro'>
       <div className="intro-name">
-        <div className="mask-up"></div>
         <h2>HI</h2>
         <h1>I'm Kudrin</h1>
+        <div className="mask-up"></div>
         <div className="mask-bot"></div>
       </div>
       <div className="intro-projects">
