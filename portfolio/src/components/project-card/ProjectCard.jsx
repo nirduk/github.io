@@ -2,7 +2,11 @@ import './projectCard.css'
 
 const ProjectCard = () => {
   return (
-    <div>ProjectCard</div>
+    <div>
+      <a href="" target="_blank">
+        <img src="" alt="" />
+      </a>
+    </div>
   )
 }
 

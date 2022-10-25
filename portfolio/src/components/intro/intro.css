@@ -12,6 +12,7 @@
   align-items: flex-start;
   overflow: hidden;
   position: relative;
+  cursor: default;
 }
 
 .intro h1 {
