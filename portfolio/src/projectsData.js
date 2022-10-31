@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     projectName: 'Rock Paper Scissors',
     link: 'https://nirduk.github.io/rock-paper-scissors/',
-    img: '/portfolio/src/img/rockPaperScissors.png'
+    img: 'portfolio/src/img/rockPaperScissors.png'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const projectsData = [
     id: 3,
     projectName: 'Randon Quote Machine',
     link: 'https://nirduk.github.io/random-quote-machine/',
-    img: '/portfolio/src/img/randomQuoteMachine.png'
+    img: 'portfolio/src/img/randomQuoteMachine.png'
   },
   {
     id: 4,
