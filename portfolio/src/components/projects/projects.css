@@ -14,17 +14,24 @@
 
 .projects {
   display: flex;
-  margin-top: 120px;
-  height: 500px;
-  width: 700px;
+  margin-top: 170px;
+  height: 400px;
+  width: 650px;
   justify-content: space-between;
   align-items: center;
-  background-color: aqua;
+  /* overflow: hidden; */
+  position: relative;
 }
 
-.projects i {
+.fa-solid {
   font-size: 50px;
   cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  position: absolute;
+}
+
+.fa-chevron-right {
+  right: 0;
 }
 
 .projects i:hover {
