@@ -15,10 +15,11 @@
 .projects {
   display: flex;
   margin-top: 120px;
-  height: 50%;
-  width: 40%;
+  height: 500px;
+  width: 700px;
   justify-content: space-between;
   align-items: center;
+  background-color: aqua;
 }
 
 .projects i {
