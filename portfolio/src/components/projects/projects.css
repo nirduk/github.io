@@ -37,3 +37,7 @@
 .projects i:hover {
   transform: scale(1.2);
 }
+
+.card {
+  left: 200px;
+}
