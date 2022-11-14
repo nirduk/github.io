@@ -8,9 +8,9 @@ const Projects = () => {
       <h3>and these are some of my projects</h3>
       <div className="projects">
         <i className="fa-solid fa-chevron-left"></i>
-          {projectsData.map(item => (
-            <ProjectCard className="card" img={item.img} link={item.link} projectName={item.projectName} key={item.id} />
-          ))}
+        {projectsData.map(item => (
+          <ProjectCard className="card" img={item.img} link={item.link} projectName={item.projectName} key={item.id} />
+        ))}
         <i className="fa-solid fa-chevron-right"></i>
       </div>
     </div>

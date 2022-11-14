@@ -1,11 +1,14 @@
 import Intro from './components/intro/Intro'
 import Projects from './components/projects/Projects';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
     <div className="App">
-      <Intro />
-      <Projects />
+      <ParallaxProvider>
+        <Intro />
+        <Projects />
+      </ParallaxProvider>
     </div>
   );
 }

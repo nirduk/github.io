@@ -19,7 +19,7 @@
   width: 650px;
   justify-content: space-between;
   align-items: center;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 
@@ -28,6 +28,7 @@
   cursor: pointer;
   transition: 0.3s ease-in-out all;
   position: absolute;
+  z-index: 2;
 }
 
 .fa-chevron-right {
@@ -35,9 +36,9 @@
 }
 
 .projects i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .card {
-  left: 200px;
+  left: 0px;
 }
