@@ -5,14 +5,20 @@ function Intro() {
   return (
     <div className="intro">
       <div className="intro-name">
-        <Parallax translateX={['-150px', '100px']}>
+        <Parallax
+          translateX={['-150px', '100px']}
+          opacity={[3, 0, 'easeInOut']}
+        >
           <h2 >HI</h2>
         </Parallax>
-        <Parallax translateX={['260px', '-400px']}>
+        <Parallax
+          translateX={['260px', '-400px']}
+          opacity={[2, 0, 'easeInOut']}
+        >
           <h1>I'm Kudrin</h1>
         </Parallax>
-          <div className="mask-up"></div>
-          <div className="mask-bot"></div>
+        <div className="mask-up"></div>
+        <div className="mask-bot"></div>
       </div>
     </div>
   )
