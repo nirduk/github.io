@@ -8,7 +8,7 @@
   border-radius: 10px;
   background-color: var(--grey-300);
   position: relative;
-  /* animation: move-card 1s forwards; */
+  transition: 0.3s ease-in-out all;
 }
 
 p {
@@ -37,8 +37,18 @@ img {
   background-size: cover;
 }
 
-/* @keyframes move-card {
-  100% {
-    transform: translateX(-650px);
-  }
-} */
+.first {
+  left: 0px;
+}
+
+.second {
+  left: -650px;
+}
+
+.third {
+  left: -1300px;
+}
+
+.fourth {
+  left: -1950px;
+}
