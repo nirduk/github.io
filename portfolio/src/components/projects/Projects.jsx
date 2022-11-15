@@ -24,7 +24,7 @@ const Projects = () => {
         <i
           className="fa-solid fa-chevron-left"
           onClick={() => {
-            if(count <= 0) {
+            if (count <= 0) {
               return count
             }
             setCount(count - 1)
@@ -43,12 +43,18 @@ const Projects = () => {
         <i
           className="fa-solid fa-chevron-right"
           onClick={() => {
-            if(count >= 3) {
+            if (count >= 3) {
               return count
             }
             setCount(count + 1)
           }}
         ></i>
+        <div className="dotWrapper">
+          <div className={`dot ${count == 0 ? 'dotBorder' : ''}`}></div>
+          <div className={`dot ${count == 1 ? 'dotBorder' : ''}`}></div>
+          <div className={`dot ${count == 2 ? 'dotBorder' : ''}`}></div>
+          <div className={`dot ${count == 3 ? 'dotBorder' : ''}`}></div>
+        </div>
       </div>
     </div>
   )
