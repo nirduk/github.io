@@ -28,3 +28,18 @@ body {
   background-color: var(--grey-900);
   color: var(--grey-300);
 }
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey-700);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--grey-800);
+}
