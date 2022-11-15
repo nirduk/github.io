@@ -19,8 +19,13 @@
   width: 650px;
   justify-content: space-between;
   align-items: center;
-  overflow-x: hidden;
   position: relative;
+}
+
+.single-card {
+  display: flex;
+  overflow: hidden;
+  width: 600px;
 }
 
 .fa-solid {
@@ -39,7 +44,7 @@
   transform: scale(1.1);
 }
 
-.dotWrapper {
+.dot-wrapper {
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -58,6 +63,6 @@
   transition: 0.3s ease-in-out all;
 }
 
-.dotBorder {
+.dot-border {
   transform: scale(1.5);
 }

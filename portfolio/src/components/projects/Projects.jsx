@@ -25,21 +25,23 @@ const Projects = () => {
           className="fa-solid fa-chevron-left"
           onClick={() => {
             if (count <= 0) {
-              return count
+              return count;
             }
             setCount(count - 1)
           }}
         ></i>
-        {projectsData.map(item => (
-          <ProjectCard
-            className="card"
-            img={item.img}
-            link={item.link}
-            projectName={item.projectName}
-            key={item.id}
-            count={count}
-          />
-        ))}
+        <div className="single-card">
+          {projectsData.map(item => (
+            <ProjectCard
+              className="card"
+              img={item.img}
+              link={item.link}
+              projectName={item.projectName}
+              key={item.id}
+              count={count}
+            />
+          ))}
+        </div>
         <i
           className="fa-solid fa-chevron-right"
           onClick={() => {
@@ -49,11 +51,11 @@ const Projects = () => {
             setCount(count + 1)
           }}
         ></i>
-        <div className="dotWrapper">
-          <div className={`dot ${count == 0 ? 'dotBorder' : ''}`}></div>
-          <div className={`dot ${count == 1 ? 'dotBorder' : ''}`}></div>
-          <div className={`dot ${count == 2 ? 'dotBorder' : ''}`}></div>
-          <div className={`dot ${count == 3 ? 'dotBorder' : ''}`}></div>
+        <div className="dot-wrapper">
+          <div className={`dot ${count == 0 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count == 1 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count == 2 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count == 3 ? 'dot-border' : ''}`}></div>
         </div>
       </div>
     </div>
