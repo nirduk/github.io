@@ -52,10 +52,10 @@ const Projects = () => {
           }}
         ></i>
         <div className="dot-wrapper">
-          <div className={`dot ${count == 0 ? 'dot-border' : ''}`}></div>
-          <div className={`dot ${count == 1 ? 'dot-border' : ''}`}></div>
-          <div className={`dot ${count == 2 ? 'dot-border' : ''}`}></div>
-          <div className={`dot ${count == 3 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count === 0 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count === 1 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count === 2 ? 'dot-border' : ''}`}></div>
+          <div className={`dot ${count === 3 ? 'dot-border' : ''}`}></div>
         </div>
       </div>
     </div>

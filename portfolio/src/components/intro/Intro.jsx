@@ -7,13 +7,13 @@ function Intro() {
       <div className="intro-name">
         <Parallax
           translateX={['-150px', '100px']}
-          opacity={[3, 0, 'easeInOut']}
+          opacity={[2.5, 0, 'easeInOut']}
         >
           <h2 >HI</h2>
         </Parallax>
         <Parallax
           translateX={['260px', '-400px']}
-          opacity={[2, 0, 'easeInOut']}
+          opacity={[1.3, 0, 'easeInOut']}
         >
           <h1>I'm Kudrin</h1>
         </Parallax>
