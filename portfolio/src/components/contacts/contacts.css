@@ -19,7 +19,7 @@
   border-left: 2px solid var(--grey-500);
 }
 
-/* contact-linkss */
+/* contact-links */
 
 .contacts-container p {
   font-size: 40px;
@@ -79,7 +79,7 @@ textarea {
 input:focus,
 textarea:focus {
   background-color: var(--grey-800);
-  outline: none;  
+  outline: none;
 }
 
 input::placeholder,
@@ -93,7 +93,6 @@ button {
   background-color: var(--grey-300);
   color: var(--grey-900);
   font-size: 14px;
-  /* letter-spacing: 1px; */
   font-weight: 600;
   border: none;
   border-radius: 5px;

@@ -1,16 +1,26 @@
+import './contacts.css';
 import { useParallax } from 'react-scroll-parallax';
-import { useRef } from 'react'
-import './contacts.css'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
   const parallaxContacts = useParallax({
-    // translateY: [-10, 0],
     opacity: [0, 2, 'easeInOut']
   })
+
   const formRef = useRef();
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
+
+    emailjs.sendForm('service_u2k9qkc', 'template_kpkg43a', formRef.current, 'P0iEoxOrereBPlR5Q')
+      .then((result) => {        
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+
+      event.target.reset();
   }
 
   return (
@@ -24,21 +34,21 @@ const Contacts = () => {
               target="_blank"
               rel="noreferrer">
 
-              <i class="fa-brands fa-telegram"></i>
+              <i className="fa-brands fa-telegram"></i>
             </a>
             <a
               href="https://github.com/nirduk"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/oleksandr-kudrin-b197401b4/"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
@@ -46,10 +56,10 @@ const Contacts = () => {
         <div className="contact-form">
           <p>or just send me an email</p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea id="" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+            <input type="text" placeholder="Name" name="user_name" required />
+            <input type="text" placeholder="Subject" name="user_subject" required />
+            <input type="text" placeholder="Email" name="user_email" required />
+            <textarea cols="30" rows="10" placeholder="Message" name="message" required></textarea>
             <button>Submit</button>
           </form>
         </div>
