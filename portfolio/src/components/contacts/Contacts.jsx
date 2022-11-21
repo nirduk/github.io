@@ -59,7 +59,7 @@ const Contacts = () => {
             <input type="text" placeholder="Name" name="user_name" required />
             <input type="text" placeholder="Subject" name="user_subject" required />
             <input type="text" placeholder="Email" name="user_email" required />
-            <textarea cols="30" rows="10" placeholder="Message" name="message" required></textarea>
+            <textarea rows="10" placeholder="Message" name="message" required></textarea>
             <button>Submit</button>
           </form>
         </div>

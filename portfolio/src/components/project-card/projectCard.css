@@ -26,7 +26,7 @@ a {
 .card-image {
   display: flex;
   height: 350px;
-  width: 550px;
+  width: 100%;
   overflow: hidden;
   justify-content: center;
   border-radius: 0 0 10px 10px;
@@ -51,4 +51,31 @@ img {
 
 .fourth {
   left: -1950px;
+}
+
+/* X-Small devices (portrait phones, 576px and down) */
+@media (max-width: 575.8px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-image {
+    height: 270px;
+  }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 767.8px) {
+  
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 991.8px) {
+  
+}
+
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1199.8px) {
+  
 }

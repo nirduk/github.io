@@ -65,3 +65,43 @@
     visibility: hidden;
   }
 }
+
+/* X-Small devices (portrait phones, 576px and down) */
+@media (max-width: 575.8px) {
+  .intro {
+    width: 80%;
+    margin: auto;
+    overflow: visible;
+  }
+
+  .intro h1 {
+    font-size: 100px;
+    margin-left: 12%;
+    animation: none;
+  }
+  
+  .intro h2 {
+    font-size: 100px;
+    margin-left: 6%;
+    animation: none;
+  }
+
+  .mask-up, .mask-bot {
+    display: none;
+  }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media (max-width: 767.8px) {
+  
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media (max-width: 991.8px) {
+  
+}
+
+/* Large devices (desktops, 1200px and down) */
+@media (max-width: 1199.8px) {
+  
+}
