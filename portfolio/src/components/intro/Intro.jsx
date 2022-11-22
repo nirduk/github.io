@@ -9,7 +9,7 @@ function Intro() {
           translateX={['-150px', '100px']}
           opacity={[2.5, 0, 'easeInOut']}
         >
-          <h2 >HI</h2>
+          <h2>HI</h2>
         </Parallax>
         <Parallax
           translateX={['260px', '-400px']}

@@ -109,7 +109,7 @@ button:hover {
 }
 
 /* X-Small devices (portrait phones, 576px and down) */
-@media (max-width: 575.8px) {
+@media screen and (max-width: 575.8px) {
   .contacts-container {
     height: auto;
     margin-top: 150px;
@@ -119,12 +119,12 @@ button:hover {
   .contacts-container p {
     font-size: 30px;
   }
-  
+
   .contacts {
     flex-direction: column;
     align-items: center;
     gap: 80px;
-    width: 80%;
+    width: 100%;
   }
 
   form {
@@ -137,10 +137,46 @@ button:hover {
 }
 
 /* Small devices (landscape phones, 768px and down) */
-@media (max-width: 767.8px) {}
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
+  .contacts-container {
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .line {
+    display: none;
+  }
+}
 
 /* Medium devices (tablets, 992px and down) */
-@media (max-width: 991.8px) {}
+@media screen and (min-width: 768px) and (max-width: 991.8px) {
+  .contacts-container {
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .line {
+    display: none;
+  }
+}
 
 /* Large devices (desktops, 1200px and down) */
-@media (max-width: 1199.8px) {}
+@media screen and (min-width: 992px) and (max-width: 1199.8px) {
+  .contacts {
+    justify-content: space-evenly;
+  }
+}

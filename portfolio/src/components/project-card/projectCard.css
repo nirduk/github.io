@@ -54,7 +54,7 @@ img {
 }
 
 /* X-Small devices (portrait phones, 576px and down) */
-@media (max-width: 575.8px) {
+@media screen and (max-width: 575.8px) {
   .card {
     width: 100%;
     height: auto;
@@ -66,16 +66,35 @@ img {
 }
 
 /* Small devices (landscape phones, 768px and down) */
-@media (max-width: 767.8px) {
-  
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
+  .card {
+    width: 460px;
+    height: auto;
+  }
+
+  .card-image {
+    height: 300px;
+  }
+
+  .first {
+    left: 0px;
+  }
+
+  .second {
+    left: -560px;
+  }
+
+  .third {
+    left: -1120px;
+  }
+
+  .fourth {
+    left: -1680px;
+  }
 }
 
 /* Medium devices (tablets, 992px and down) */
-@media (max-width: 991.8px) {
-  
-}
+@media screen and (min-width: 768px) and (max-width: 991.8px) {}
 
 /* Large devices (desktops, 1200px and down) */
-@media (max-width: 1199.8px) {
-  
-}
+@media screen and(min-width: 992px) and (max-width: 1199.8px) {}
