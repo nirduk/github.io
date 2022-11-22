@@ -7,7 +7,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    projectName: 'Randon Quote Machine',
+    projectName: 'Random Quote Machine',
     link: 'https://nirduk.github.io/random-quote-machine/',
     img: 'https://github.com/nirduk/nirduk.github.io/blob/main/portfolio/src/img/randomQuoteMachine.png?raw=true'
   },
